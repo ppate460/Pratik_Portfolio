@@ -252,7 +252,7 @@ a:hover {
 
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: #272626d7;
     padding: 4.8rem 0;
 }
 
@@ -276,7 +276,7 @@ a:hover {
     margin: 1rem auto;
     border: 0;
     width: 50%;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.292);
 }
 
 /* Social Links */
@@ -286,11 +286,11 @@ a:hover {
 }
 
 .social-links a {
-    font-size: 3rem;
+    font-size: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: #ffffff;
     width: 5rem;
     height: 5rem;
     margin: 1.6rem 1.6rem;
@@ -315,6 +315,10 @@ a:hover {
 
 .social-links a:hover .fa-linkedin {
     color: #4875b4;
+}
+
+.social-links a:hover .fa-github {
+    color: #7b7e828a;
 }
 
 /* Social Links */
@@ -788,3 +792,53 @@ section .row span {
         transform: none;
     }
 }
+
+/* Education Section */
+#education {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .education-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .education-card {
+    background: #dee2e257;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .education-card__title {
+    font-size: 3.5em;
+    color: #333;
+    margin-bottom: 10px;
+    color: #dc3654;
+  }
+  
+  .education-card__degree,
+  .education-card__certificate,
+  .education-card__date,
+  .education-card__details {
+    font-size: 2.0em;
+    color: #666;
+  }
+  
+  .education-card__degree,
+  .education-card__certificate {
+    font-weight: bold;
+    color: #3647dc;
+  }
+  
+  .education-card__date {
+    font-style: italic;
+  }
+  
