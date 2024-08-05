@@ -48,14 +48,9 @@ a:hover {
 /* Media Query */
 @media (max-width: 37.5em) {
     .section-title {
-        font-size: 2.8rem;
+        font-size: 4rem;
+        color:rgb(101, 8, 231)
     }
-}
-
-/* Hover Effect */
-.section-title:hover {
-    color: #eb6ccb; /* Change color on hover */
-    font-size: 7rem; /* Slightly increase font size on hover */
 }
 
 /* Keyframes for Fade-in Animation */
@@ -529,13 +524,13 @@ section .row span {
 
 /* Contact Section */
 #contact {
-    background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    background-image: linear-gradient(135deg, #353939 0%, #457aec 100%);
     -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-    padding: 15rem 0 10rem 0;
-    margin-top: -15rem;
+    padding: 25rem 0 10rem 0;
+    margin-top: -22rem;
     margin-bottom: -1px;
-    color: #fff;
+    color: #89cb66;
 }
 
 @media (max-width: 75em) {
@@ -554,18 +549,78 @@ section .row span {
     backface-visibility: hidden;
 }
 
-#contact .contact-wrapper__text {
-    margin-bottom: 2.5rem;
+#projects .project-wrapper__text {
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    background: linear-gradient(135deg, #a2c2e0, #d9a1bc); /* Gradient background */
+    color: #1d1c1c; /* Dark text color for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 18px; /* Increased font size for readability */
+    line-height: 1.6; /* Improved line spacing */
+    border: 1px solid #bc8ca3; /* Border to match background gradient */
 }
 
 #contact .contact-wrapper__text, #contact .contact-wrapper a {
-    font-size: 2.4rem;
+    font-size: 3rem;
 }
 
 @media (max-width: 37.5em) {
     #contact .contact-wrapper__text, #contact .contact-wrapper a {
         font-size: 2rem;
     }
+}
+
+.contact-form {
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form *
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 500px; /* Max width for form */
+    margin: 20px auto; /* Centered form with margin */
+}
+
+.contact-form h3 {
+    font-size: 3em; /* Font size for the form heading */
+    color: #333; /* Dark text color for readability */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.contact-form label {
+    font-size: 25px;;
+    display: block; /* Block-level labels for better alignment */
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Full width input and textarea */
+    padding: 10px; /* Padding inside input and textarea */
+    margin-bottom: 15px; /* Space below input and textarea */
+    border: 2px solid #07070728; /* Border around input and textarea */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 3em; /* Font size for inputs and textarea */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    background-color: #1e3a8a; /* Dark blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 2em; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.contact-form button:hover {
+    background-color: #667fda; /* Slightly darker blue on hover */
 }
 
 /* Hero Section */
@@ -753,7 +808,11 @@ section .row span {
 
 #projects .project-wrapper .row {
     margin: 0;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
+    border: 3px solid #baabc7;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 @media (max-width: 37.5em) {
@@ -798,6 +857,7 @@ section .row span {
 #projects .project-wrapper__text-btns {
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
