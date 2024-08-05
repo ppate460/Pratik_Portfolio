@@ -494,6 +494,7 @@ section .row span {
     justify-content: center;
     flex-direction: column;
     text-align: left;
+    color: rgb(240, 241, 246);
 }
 
 @media (max-width: 48em) {
@@ -504,8 +505,27 @@ section .row span {
 }
 
 .about-wrapper__info-text {
+    font-family: 'pacifico';
+    font-size: 30px;
+}
+
+.highlighted-bullets {
     font-size: 20px;
-  }
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+.highlighted-bullets li {
+    background-color: #b0cae0; /* Light background color */
+    border: 1px solid #dfe890; /* Light border color */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.highlighted-bullets li strong {
+    color: #ae4442; /* Dark blue color for emphasis */
+}
 
 /* Contact Section */
 #contact {
@@ -817,7 +837,7 @@ section .row span {
 
 /* Education Section */
 #education {
-    padding: 60px 0;
+    padding-top: 10px;
     background-color: #f9f9f9;
   }
   
@@ -828,7 +848,7 @@ section .row span {
   }
   
   .education-card {
-    background: #dee2e257;
+    background: #9ac0ce84;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -1010,4 +1030,43 @@ section .row span {
     display: flex;
     justify-content: center; /* Center the button horizontally */
     margin-top: 1rem; /* Space between the image and the button */
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.skills-category {
+    background-color: rgb(224, 203, 176);
+    border: 2px solid #5e5b5a96;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.skills-category:hover {
+    transform: scale(1.11);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.skills-category h3 {
+    color: #0585f5;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e54666;
+    padding-bottom: 5px;
+    
+}
+.skills-category p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    color: #000;
+    background: #2727ec;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s ease infinite;
 }
